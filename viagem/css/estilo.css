@@ -1,0 +1,120 @@
+body {
+  margin: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.background {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+}
+
+.central {
+  color: aliceblue;
+  background-color: rgba(128, 0, 0, 0.199);
+  width: 340px;
+  height: 490px;
+  padding: 10px;
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 10px rgb(214, 1, 1);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+}
+
+.central-span {
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.central-input {
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.central-input:focus {
+  background-color: #f8f8f8;
+}
+
+.central input[type="text"] {
+  margin-bottom: 18px;
+}
+
+.central #real {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.central #real:focus {
+  background: rgb(red, green, blue);
+}
+
+.central #botao {
+  position: relative;
+  margin-top: 8px;
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background: black;
+  color: rgb(185, 6, 6);
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.central #botao:hover {
+  color: aliceblue;
+  background: linear-gradient(270deg, #000000, #fa0021, #f8f8f8);
+  background-size: 600% 600%;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: grey;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  width: 90%;
+  min-height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
